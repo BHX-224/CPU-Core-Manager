@@ -30,7 +30,7 @@ Requirements (that's all — no `requirements.txt` equivalent needed):
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) (`winget install Microsoft.DotNet.SDK.8`)
 
 ```bat
-git clone https://github.com/<you>/CpuCoreManager.git
+git clone https://github.com/BHX-224/CpuCoreManager.git
 cd CpuCoreManager
 dotnet build -c Release
 bin\Release\net8.0-windows\CpuCoreManager.exe
