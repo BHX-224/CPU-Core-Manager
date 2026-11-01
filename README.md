@@ -4,6 +4,10 @@ A small Windows utility for seeing exactly what your CPU has and deciding which 
 
 C# / .NET 8 WinForms. Single project, zero external dependencies.
 
+## Designed with Intel 12th Gen+ in mind
+
+This utility was built specifically for Intel users — especially systems on the 12th-gen Alder Lake and newer hybrid architectures (P-cores + E-cores). On these CPUs, Windows schedules threads across two very different core types, and older applications that assume a uniform CPU topology can misbehave at runtime: wrong thread counts, stuttering, or outright crashes. Pinning such games and apps to the cores they expect — optionally with a matching reported processor count — makes them run properly again.
+
 ## Features
 
 - **CPU overview** — vendor, logical core count, and hybrid P/E-core breakdown (Intel 12th gen+) detected straight from the Windows registry (`HKLM\HARDWARE\DESCRIPTION\System\CentralProcessor`). No WMI, no CPUID FFI.
